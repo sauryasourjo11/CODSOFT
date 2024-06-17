@@ -55,4 +55,14 @@ def main():
         print(f"\nScores:\nYou: {user_score}\nComputer: {computer_score}")
         
         # Ask if the user wants to play again
-        play_again = input("\nDo you
+        play_again = input("\nDo you want to play again? (yes/no): ").lower()
+        if play_again != "yes":
+            break
+    
+    print("\nThanks for playing! Final scores:")
+    print(f"You: {user_score}")
+    print(f"Computer: {computer_score}")
+
+# Run the main function
+if __name__ == "__main__":
+    main()
